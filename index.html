@@ -10,8 +10,9 @@
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Ольха">
 <meta property="og:title" content="Кафе на углях: столик к вашему часу">
-<meta property="og:description" content="Бронь в мессенджере за минуту, столик держим 15 минут после вашего времени. Меню с ценами на сайте, горячее с углей за 20–25 минут.">
-<meta property="og:image" content="assets/og.jpg">
+<meta property="og:description" content="Бронь в мессенджере за минуту, столик держим 15 минут после вашего времени. Меню с ценами на сайте, горячее с углей за 20-25 минут.">
+<meta property="og:url" content="https://sugen20265-oss.github.io/kafe-demo/">
+<meta property="og:image" content="https://sugen20265-oss.github.io/kafe-demo/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -76,7 +77,7 @@
   .hero__card img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: calc(var(--v-radius) - 7px); display: block; }
   .hero__card figcaption { margin-top: .55rem; font-size: var(--v-t-xs); line-height: 1.35; color: var(--v-ink-soft); }
   .hero__card figcaption b { display: block; color: var(--v-ink); font-weight: 500; }
-  /* карточка-переписка: «букет готов, вот фото» – «Супер, спасибо!» (правка Евгения 19.09.2026) */
+  /* карточка-переписка: «букет готов, вот фото» - «Супер, спасибо!» (правка Евгения 19.09.2026) */
   .hero__chat { --cw: clamp(215px, 17.5vw, 262px); }
   .chat { position: absolute; right: calc(var(--r, clamp(1.5rem, 4vw, 5rem)) + clamp(1.5rem, 5vw, 5.5rem)); top: calc(clamp(5.5rem, 11vh, 8rem) + clamp(160px, 13vw, 200px) * 1.333 + 5.2rem); width: var(--cw);
     padding: .55rem .6rem .7rem; border-radius: calc(var(--v-radius) - 2px); background: var(--v-surface); box-shadow: 0 30px 60px rgb(8 4 12 / .55), var(--v-edge); transform: rotate(-3deg); font-size: .84rem; line-height: 1.35; color: var(--v-ink); }
@@ -157,8 +158,8 @@
   .sb__after { grid-column: 1; grid-row: 3; display: flex; align-items: center; gap: var(--v-5); flex-wrap: wrap; }
   .sb__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 34ch; }
   .fan { grid-column: 2; grid-row: 1 / -1; position: relative; align-self: center; justify-self: center; width: min(100%, 66vh); aspect-ratio: 1 / 1; }
-  /* карточка: угол a0 в стопке → a1 в веере, сдвиг tx – чтобы цветы задних карточек не прятались за передней;
-     k – доля раскрытия своей карточки; w – выход готового букета. Ось вращения далеко под карточкой (250 %): веер идёт дугой, низ карточек расходится */
+  /* карточка: угол a0 в стопке → a1 в веере, сдвиг tx - чтобы цветы задних карточек не прятались за передней;
+     k - доля раскрытия своей карточки; w - выход готового букета. Ось вращения далеко под карточкой (250 %): веер идёт дугой, низ карточек расходится */
   .fan__card { --k: clamp(0, calc((var(--v-p, 0) - var(--s)) / .3), 1); --w: clamp(0, calc((var(--v-p, 0) - .58) / .24), 1);
     position: absolute; left: 27%; bottom: 6%; width: 46%; aspect-ratio: 3 / 4; transform-origin: 50% 250%; /* left = (100 − 46) / 2: у figure margin обнулён движком, центрируем через left */
     border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); box-shadow: 0 24px 48px rgb(8 4 12 / .55), var(--v-edge);
@@ -356,13 +357,13 @@
               <source media="(max-width: 600px)" srcset="assets/dish-480.webp" width="480" height="640">
               <img src="assets/dish.webp" alt="" width="900" height="1200" decoding="async">
             </picture>
-            <figcaption><b>Горячее с углей</b>на столе за 20–25 минут</figcaption>
+            <figcaption><b>Горячее с углей</b>на столе за 20-25 минут</figcaption>
           </figure>
         </div>
         <div class="v-layer hero__chat" data-v-parallax="-0.12" aria-hidden="true">
           <div class="chat">
             <div class="chat__head"><span class="chat__ava"><i></i></span><span class="chat__who"><b>Ольха</b><span>в сети</span></span></div>
-            <p class="chat__msg">Столик у окна на 19:00 на двоих – ждём вас. Задерживаетесь – просто напишите, придержим.<time>17:02</time></p>
+            <p class="chat__msg">Столик у окна на 19:00 на двоих - ждём вас. Задерживаетесь - просто напишите, придержим.<time>17:02</time></p>
             <p class="chat__msg chat__msg--me">Отлично, будем!<time>17:03 ✓✓</time></p>
           </div>
         </div>
@@ -371,7 +372,7 @@
         <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.86 0 0.12">
           <span class="v-label hero__label">Кафе · кухня на углях</span>
           <h1 class="v-display v-display--xl" data-v-kinetic="lines">Кафе с кухней на углях: столик к вашему часу</h1>
-          <p class="v-lede">Бронь в мессенджере за минуту, столик держим 15 минут после вашего времени. Меню с ценами на сайте, горячее с углей за 20–25 минут.</p>
+          <p class="v-lede">Бронь в мессенджере за минуту, столик держим 15 минут после вашего времени. Меню с ценами на сайте, горячее с углей за 20-25 минут.</p>
           <div class="hero__cta">
             <a class="v-btn" href="https://t.me/spektr1983?text=Здравствуйте, хочу забронировать столик" target="_blank" rel="noopener">Забронировать столик</a>
             <a class="hero__tel" href="tel:+70000000000">или позвоните <b>+7 (000) 000-00-00</b></a>
@@ -390,7 +391,7 @@
         <ul class="poka__rows" data-v-in data-v-stagger="90">
           <li><h3>Пришли, а мест нет</h3><p>Звонили днём, «приходите, места будут». Вечером в зале очередь, а вас никто не записал. Ищете другое место уже голодными.</p></li>
           <li><h3>Горячее ждали час</h3><p>Заказали шашлык, а через сорок минут официант говорит «уже скоро». Разговор за столом давно свёлся к «ну где же».</p></li>
-          <li><h3>В счёте не то, что в меню</h3><p>На сайте одни цены, в зале другие, а сверху «обслуживание». Спорить при гостях неловко – на это и расчёт.</p></li>
+          <li><h3>В счёте не то, что в меню</h3><p>На сайте одни цены, в зале другие, а сверху «обслуживание». Спорить при гостях неловко - на это и расчёт.</p></li>
         </ul>
         <div class="turn" data-v-in data-v-in-self>
           <span class="v-label">Поэтому</span>
@@ -426,8 +427,8 @@
             </div>
             <div data-v-cue="0.77 1 0.05 0">
               <span class="sb__step"><i aria-hidden="true"></i>4 · Подача</span>
-              <h3>На столе за 20–25 минут</h3>
-              <p>Время подачи называем при заказе. <b>Кухня загружена – предупредим сразу</b>, а не через час ожидания.</p>
+              <h3>На столе за 20-25 минут</h3>
+              <p>Время подачи называем при заказе. <b>Кухня загружена - предупредим сразу</b>, а не через час ожидания.</p>
             </div>
           </div>
 
@@ -436,12 +437,12 @@
             <figure class="fan__card fan__card--2"><img src="assets/veg.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Овощи · на углях</figcaption></figure>
             <figure class="fan__card fan__card--1"><img src="assets/meat.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Мясо · основа</figcaption></figure>
             <figure class="fan__card fan__card--wrap"><img src="assets/dish.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Готово · с углей на стол</figcaption></figure>
-            <p class="fan__legend">Блюда на фото – пример: меню меняем по сезону</p>
+            <p class="fan__legend">Блюда на фото - пример: меню меняем по сезону</p>
           </div>
 
           <div class="sb__after" data-v-cue="0.78 1 0.06 0">
             <a class="v-btn" href="https://t.me/spektr1983?text=Здравствуйте, хочу забронировать столик" target="_blank" rel="noopener">Забронировать столик</a>
-            <span class="sb__hint">Компания больше 8 человек – напишите заранее, накроем отдельный стол</span>
+            <span class="sb__hint">Компания больше 8 человек - напишите заранее, накроем отдельный стол</span>
           </div>
         </div>
       </div>
@@ -473,9 +474,9 @@
             </li>
           </ul>
           <ul class="price__terms">
-            <li><b>Бизнес-ланч</b><span>По будням с 12:00 до 16:00: суп, горячее и напиток – 450 ₽ (для примера).</span></li>
+            <li><b>Бизнес-ланч</b><span>По будням с 12:00 до 16:00: суп, горячее и напиток - 450 ₽ (для примера).</span></li>
             <li><b>Цены как в зале</b><span>Что на сайте, то и в счёте. Обслуживание и «сервисный сбор» не добавляем.</span></li>
-            <li><b>С собой</b><span>Любое блюдо упакуем навынос: горячее – в контейнер, который держит тепло до дома.</span></li>
+            <li><b>С собой</b><span>Любое блюдо упакуем навынос: горячее - в контейнер, который держит тепло до дома.</span></li>
           </ul>
         </div>
       </div>
@@ -497,15 +498,15 @@
             <div class="kc__rep">
               <div data-v-cue="0 0.34 0 0.06">
                 <h3>Вы пишете время и сколько вас</h3>
-                <p>Отвечаем в том же чате: свободен ли стол и где он – у окна или в глубине зала. Бронь записываем сразу.</p>
+                <p>Отвечаем в том же чате: свободен ли стол и где он - у окна или в глубине зала. Бронь записываем сразу.</p>
               </div>
               <div data-v-cue="0.36 0.66 0.06 0.06">
                 <h3>За час до прихода: напоминание</h3>
-                <p>Пишем в чат: ждём вас. Планы поменялись – перенесём бронь одним сообщением, без звонков и неловкости.</p>
+                <p>Пишем в чат: ждём вас. Планы поменялись - перенесём бронь одним сообщением, без звонков и неловкости.</p>
               </div>
               <div data-v-cue="0.68 1 0.06 0">
                 <h3>Столик держим 15 минут</h3>
-                <p>Опаздываете – напишите, подождём ещё. Пришли – стол уже накрыт, свеча горит, меню на столе.</p>
+                <p>Опаздываете - напишите, подождём ещё. Пришли - стол уже накрыт, свеча горит, меню на столе.</p>
               </div>
             </div>
           </div>
@@ -540,12 +541,12 @@
             <li><strong>Банкет и корпоратив</strong><span>Сдвинем столы или закроем зал. Меню на человека по смете, смета до предоплаты, дальше не растёт.</span></li>
             <li><strong>Шашлык с собой</strong><span>На дачу или в офис: мясо, овощи и лепёшки в контейнерах к вашему часу, соусы отдельно.</span></li>
           </ul>
-          <p class="ev__hint"><b>Праздник считаем заранее:</b> напишите дату, число гостей и бюджет на человека – ответим меню и сметой.</p>
+          <p class="ev__hint"><b>Праздник считаем заранее:</b> напишите дату, число гостей и бюджет на человека - ответим меню и сметой.</p>
         </div>
       </div>
     </section>
 
-    <!-- 7 · ДЕЙСТВИЕ: напишите время и сколько вас (отзывов нет – вымышленное кафе, блок убран) -->
+    <!-- 7 · ДЕЙСТВИЕ: напишите время и сколько вас (отзывов нет - вымышленное кафе, блок убран) -->
     <section data-v-act="flow" data-v-drift="#1a1420" id="bronirovat" aria-label="Забронировать столик">
       <div class="close" data-v-spotlight>
         <div class="close__inner">
@@ -556,10 +557,10 @@
               <a class="v-btn" href="https://t.me/spektr1983?text=Здравствуйте, хочу забронировать столик" target="_blank" rel="noopener" data-v-magnet="0.22" data-v-rise="0">Забронировать столик</a>
               <a class="close__tel" href="tel:+70000000000">+7 (000) 000-00-00</a>
             </div>
-            <p class="close__hint">Не любите писать – звоните. Компанию больше 8 человек лучше бронировать за день.</p>
+            <p class="close__hint">Не любите писать - звоните. Компанию больше 8 человек лучше бронировать за день.</p>
           </div>
           <div class="close__meta" data-v-in data-v-stagger="60">
-            <span><b>Работаем</b>12:00 – 23:00 без выходных</span>
+            <span><b>Работаем</b>12:00 - 23:00 без выходных</span>
             <span><b>Кухня</b>горячее с углей до 22:30</span>
             <span><b>Адрес</b>подскажем при бронировании</span>
           </div>
